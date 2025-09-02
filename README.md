@@ -35,11 +35,19 @@ Add yourself to the `docker` group:
 To have cloned this project, you'll need `git`.
 
 Once you have cloned this project, run `clone-all.sh`, which will clone all
-the other parts of Parachute into directories at the same level as this project.
+the other parts of Parachute into directories at the same level as this project,
+as well as the Raspberry Pi Pico SDK repos.
 
 To build the image, run `build.sh`. This builds an image tagged `parachute-latest`.
 
-To use the container, run `parachute-container.sh`.
+To start the image and use the container, run `parachute-container.sh`.
+
+In the container, build everything into `/opt/parachute` with `./build-all.sh`. 
+
+You may need to give your sudo password, as some directory creation will require it.
+There's a Maven local repository that will be populated as `transputer-emulator`,
+`transputer-macro-assembler` build, this will be placed at the same level as the
+cloned repositories.
 
 # License, Copyright & Contact info
 This code is released under the Apache 2.0 License: http://www.apache.org/licenses/LICENSE-2.0.html.
