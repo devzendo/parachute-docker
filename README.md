@@ -25,12 +25,14 @@ of all necessary development tools. I use this container on the above Mint
 system.
 
 # Building
-You will need docker: install the docker.io and docker-buildx packages.
-Add yourself to the docker group:
+You will need docker: install the `docker.io` and `docker-buildx` packages.
+Add yourself to the `docker` group:
+```
   sudo usermod -aG docker $USER
   newgrp docker
+```
 
-To have cloned this project, you'll need git.
+To have cloned this project, you'll need `git`.
 
 Once you have cloned this project, run `clone-all.sh`, which will clone all
 the other parts of Parachute into directories at the same level as this project.
