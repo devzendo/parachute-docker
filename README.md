@@ -38,7 +38,7 @@ Once you have cloned this project, run `clone-all.sh`, which will clone all
 the other parts of Parachute into directories at the same level as this project,
 as well as the Raspberry Pi Pico SDK repos.
 
-To build the image, run `build.sh`. This builds an image tagged `parachute-latest`.
+To build the image, run `build-image.sh`. This builds an image tagged `parachute-latest`.
 
 To start the image and use the container, run `parachute-container.sh`.
 
