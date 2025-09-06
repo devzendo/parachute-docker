@@ -16,6 +16,11 @@ cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1
 
 UPONE="${PWD%/*}"
 
+if [ ! -f /.dockerenv ]; then
+  echo This script must be run from inside the parachute-docker container
+  exit 1
+fi
+
 cd ..
 
 mkdir -p ${UPONE}/maven-local-repo
